@@ -46,4 +46,26 @@ The `--adopt` flag is useful when you want to move existing configuration files 
 - Create the appropriate symlink back to the original location
 - This is helpful when you want to add existing configurations to version control without manually copying files
 
-**Note**: Be careful with `--adopt` as it will overwrite files in your dotfiles directory if they already exist. Always make backups before using this option.
+### Nix
+https://github.com/LnL7/nix-darwin
+https://github.com/zhaofengli/nix-homebrew
+```bash
+# Setup
+sudo mkdir -p /etc/nix-darwin
+sudo chown $(id -nu):$(id -ng) /etc/nix-darwin
+cd /etc/nix-darwin
+
+# Configure
+nix flake init -t nix-darwin/master --extra-experimental-features "nix-command flakes"
+
+nix run --extra-experimental-features 'nix-command flakes' nix-darwin -- switch --flake .#silvermac
+
+# Verify
+which darwin-rebuild
+
+# Rebuild
+cd /etc/nix-darwin
+darwin-rebuild switch --flake .#silvermac
+
+
+```
