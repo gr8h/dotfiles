@@ -136,4 +136,26 @@ alias cd="z"
 
 # ---- windsurf ----
 export PATH="/Applications/Windsurf.app/Contents/MacOS:$PATH"
+export PATH="/Users/heshamshabanah/.codeium/windsurf/bin:$PATH"
 alias wind="Electron"
+
+# ---- gnu-tar ----
+export PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH"
+
+# ---- solana cli ----
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+
+# ---- llvm ----
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+
+# ---- deployment_cli ----
+export PATH="$HOME/gr8h/Repos/nufflelabs/nuff/target/release:$PATH"
+
+# ---- Vim on Terminal ---
+bindkey -v
+
+# Added by Antigravity
+export PATH="/Users/heshamshabanah/.antigravity/antigravity/bin:$PATH"
