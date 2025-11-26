@@ -149,78 +149,34 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
+# aerospace list-apps
 [[on-window-detected]]
-if.app-id = 'net.whatsapp.WhatsApp'
+if.app-name-regex-substring = 'whatsapp|telegram|slack|messages'
 run = ["move-node-to-workspace 1"]
 
 [[on-window-detected]]
-if.app-id = 'com.tinyspeck.slackmacgap'
-run = ["move-node-to-workspace 1"]
-
-[[on-window-detected]]
-if.app-id = 'ru.keepcoder.Telegram'
-run = ["move-node-to-workspace 1"]
-
-[[on-window-detected]]
-if.app-id = 'company.thebrowser.Browser'
+if.app-name-regex-substring = 'chrome|safari|firefox|brave|arc|comet|zen|atlas'
 run = ["move-node-to-workspace 2"]
 
-
 [[on-window-detected]]
-if.app-id = 'com.microsoft.VSCode'
+if.app-name-regex-substring = 'vscode|windsurf|antigravity'
 run = ["move-node-to-workspace 3"]
 
 [[on-window-detected]]
-if.app-id = 'com.exafunction.windsurf'
-run = ["move-node-to-workspace 3"]
-
-[[on-window-detected]]
-if.app-id = 'com.google.antigravity'
+if.app-name-regex-substring = 'warp|terminal'
 run = ["move-node-to-workspace 4"]
 
 [[on-window-detected]]
-if.app-id = 'li.zihua.medis2'
+if.app-name-regex-substring = 'medis2|compass|docker'
 run = ["move-node-to-workspace 5"]
 
 [[on-window-detected]]
-if.app-id = 'com.mongodb.compass'
-run = ["move-node-to-workspace 5"]
-
-[[on-window-detected]]
-if.app-id = 'dev.warp.Warp-Stable'
+if.app-name-regex-substring = 'remarkable|zoom|teams'
 run = ["move-node-to-workspace 6"]
 
 [[on-window-detected]]
-if.app-id = 'com.remarkable.desktop'
+if.app-name-regex-substring = 'steam|keymapp'
 run = ["move-node-to-workspace 7"]
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Preview'
-run = ["move-node-to-workspace 7"]
-
-[[on-window-detected]]
-if.app-id = 'us.zoom.xos'
-run = ["move-node-to-workspace 7"]
-
-[[on-window-detected]]
-if.app-id = 'com.microsoft.teams2'
-run = ["move-node-to-workspace 7"]
-
-[[on-window-detected]]
-if.app-id = 'com.valvesoftware.steam'
-run = ["move-node-to-workspace 8"]
-
-[[on-window-detected]]
-if.app-id = 'io.zsa.keymapp'
-run = ["move-node-to-workspace 8"]
-
-[[on-window-detected]]
-if.app-id = 'com.apple.iCal'
-run = ["move-node-to-workspace 8"]
-
-# [[on-window-detected]]
-# if.app-id = 'com.utmapp.UTM'
-# run = ["move-node-to-workspace 8"]
 
 [[on-window-detected]]
 check-further-callbacks = true
