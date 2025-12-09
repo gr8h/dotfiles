@@ -75,6 +75,14 @@ alt-j = 'focus down'
 alt-k = 'focus up'
 alt-l = 'focus right'
 
+ctrl-alt-p = 'focus left'
+ctrl-alt-n = 'focus right'
+# ctrl-alt-p = 'focus dfs-prev'
+# ctrl-alt-n = 'focus dfs-next'
+
+alt-p = "workspace --wrap-around prev"
+alt-n = "workspace --wrap-around next"
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
 alt-shift-h = 'move left'
 alt-shift-j = 'move down'
@@ -86,32 +94,20 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = 'workspace 1' # Chat Apps
-alt-2 = 'workspace 2' # Terminals
-alt-3 = 'workspace 3' # Code Editors
-alt-4 = 'workspace 4' # Browsers
-alt-5 = 'workspace 5'
-alt-6 = 'workspace 6'
-alt-7 = 'workspace 7' # Zoom
-alt-8 = 'workspace 8' # Macbook 1
-alt-9 = 'workspace 9' # Macbook 2
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
 alt-shift-3 = 'move-node-to-workspace 3'
 alt-shift-4 = 'move-node-to-workspace 4'
-alt-shift-5 = 'move-node-to-workspace 5'
-alt-shift-6 = 'move-node-to-workspace 6'
-alt-shift-7 = 'move-node-to-workspace 7'
-alt-shift-8 = 'move-node-to-workspace 8'
-alt-shift-9 = 'move-node-to-workspace 9'
 
 alt-shift-b = 'macos-native-fullscreen'
 alt-shift-f = 'fullscreen'
 
-alt-left = "workspace --wrap-around prev"
-alt-right = "workspace --wrap-around next"
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -126,11 +122,6 @@ alt-shift-semicolon = 'mode service'
 2 = 'main'
 3 = 'main'
 4 = 'main'
-5 = 'main'
-6 = 'main'
-7 = 'main'
-8 = ['built-in', 'secondary']
-9 = ['built-in', 'secondary']
 
 # 'service' binding mode declaration. alt-shift-semicolon
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -151,33 +142,22 @@ alt-shift-l = ['join-with right', 'mode main']
 
 # aerospace list-apps
 [[on-window-detected]]
-if.app-name-regex-substring = 'whatsapp|telegram|slack|messages'
+if.app-name-regex-substring = 'whatsapp|telegram|slack|messages|zoom|teams|discord'
 run = ["move-node-to-workspace 1"]
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'chrome|safari|firefox|brave|arc|comet|zen|atlas'
+if.app-name-regex-substring = 'chrome|safari|firefox|brave|arc|zen|atlas|comet'
 run = ["move-node-to-workspace 2"]
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'vscode|windsurf|antigravity'
+if.app-name-regex-substring = 'vscode|windsurf|antigravity|wezterm|medis2|compass|dbeaver|docker|steam|keymapp|prusaslicer'
 run = ["move-node-to-workspace 3"]
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'warp|terminal'
-run = ["move-node-to-workspace 4"]
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'medis2|compass|docker'
-run = ["move-node-to-workspace 5"]
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'remarkable|zoom|teams'
-run = ["move-node-to-workspace 6"]
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'steam|keymapp'
-run = ["move-node-to-workspace 7"]
-
-[[on-window-detected]]
-check-further-callbacks = true
+if.app-name-regex-substring = 'preview|yubico|finder|logi|calculator|journal|notes|bitwarden|ausweisapp'
 run = ['layout floating']
+# check-further-callbacks = true
+
+[[on-window-detected]]
+if.app-name-regex-substring = '.*'
+run = ["move-node-to-workspace 4"]
