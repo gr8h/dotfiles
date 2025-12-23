@@ -1,0 +1,26 @@
+# VSCode
+.config/code/History/
+.config/code/workspaceStorage/
+.config/code/globalStorage/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets & Local
+.env
+.env.local
+*.key
+credentials.json
+
+# Dependencies
+node_modules/
+*.lock
+*.log
+
+# Temporary files
+.tmp/
+*.swp
+*.swo
+*~
