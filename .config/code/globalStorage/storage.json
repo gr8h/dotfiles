@@ -99,8 +99,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -820,6 +819,13 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "workbench.action.splitEditorInGroup",
+                                    "label": "Split in &&Group"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "workbench.action.moveEditorToNewWindow",
                                     "label": "&&Move Editor into New Window"
                                 },
@@ -936,7 +942,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -946,17 +953,6 @@
                         "label": "Switch &&Editor",
                         "submenu": {
                             "items": [
-                                {
-                                    "id": "workbench.action.focusFirstSideEditor",
-                                    "label": "&&First Side in Editor"
-                                },
-                                {
-                                    "id": "workbench.action.focusSecondSideEditor",
-                                    "label": "&&Second Side in Editor"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
                                 {
                                     "id": "workbench.action.nextEditor",
                                     "label": "&&Next Editor"
@@ -1599,6 +1595,11 @@
                 "isNative": false,
                 "userSettingsLabel": "cmd+k cmd+\\"
             },
+            "workbench.action.splitEditorInGroup": {
+                "label": "⌘K ⇧⌘\\",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k shift+cmd+\\"
+            },
             "workbench.action.copyEditorToNewWindow": {
                 "label": "⌘K O",
                 "isNative": false,
@@ -1875,8 +1876,8 @@
             "backupPath": "/Users/heshamshabanah/Library/Application Support/Antigravity/Backups/6da8b67ae9bdf08e9eedd46b7ec19bdc",
             "uiState": {
                 "mode": 1,
-                "x": 2559,
-                "y": 1412,
+                "x": 5,
+                "y": 36,
                 "width": 2550,
                 "height": 1398
             }

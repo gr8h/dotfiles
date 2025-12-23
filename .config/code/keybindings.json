@@ -1,130 +1,100 @@
-// Place your key bindings in this file to override the defaults
 [
-    // TERMINAL NAVIGATION (Antigravity keybindings)
-    {
-      "key": "ctrl+k",
-      "command": "workbench.action.focusActiveEditorGroup",
-      "when": "terminalFocus"
+  // Terminal Navigation
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+backspace",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\\\r\n"
     },
-    {
-      "key": "ctrl+j",
-      "command": "workbench.action.terminal.focus",
-      "when": "!terminalFocus"
-    },
-    {
-      "key": "ctrl+h",
-      "command": "workbench.action.terminal.focusNext",
-      "when": "terminalFocus"
-    },
-    {
-      "key": "ctrl+l",
-      "command": "workbench.action.terminal.focusPrevious",
-      "when": "terminalFocus"
-    },
-    {
-      "key": "ctrl+n",
-      "command": "workbench.action.terminal.new",
-      "when": "terminalFocus"
-    },
-    {
-      "key": "cmd+backspace",
-      "command": "workbench.action.terminal.kill"
-    },
-    {
-      "key": "shift+enter",
-      "command": "workbench.action.terminal.sendSequence",
-      "args": {
-        "text": "\\\r\n"
-      },
-      "when": "terminalFocus"
-    },
-    // EXTRA
-    {
-      "key": "ctrl+shift+5",
-      "command": "editor.emmet.action.matchTag"
-    },
-    {
-      "key": "ctrl+z",
-      "command": "workbench.action.toggleZenMode"
-    },
-    // CLAUDE CODE KEYBINDINGS (Antigravity-specific)
-    {
-      "key": "ctrl+shift+alt+f",
-      "command": "claude-vscode.blur",
-      "when": "!config.claudeCode.useTerminal && !editorTextFocus"
-    },
-    {
-      "key": "cmd+escape",
-      "command": "-claude-vscode.blur",
-      "when": "!config.claudeCode.useTerminal && !editorTextFocus"
-    },
-    {
-      "key": "ctrl+shift+alt+f",
-      "command": "claude-vscode.focus",
-      "when": "editorTextFocus && !config.claudeCode.useTerminal"
-    },
-    {
-      "key": "cmd+escape",
-      "command": "-claude-vscode.focus",
-      "when": "editorTextFocus && !config.claudeCode.useTerminal"
-    },
-    {
-      "key": "ctrl+shift+alt+n",
-      "command": "claude-vscode.newConversation",
-      "when": "config.claudeCode.enableNewConversationShortcut && activeWebviewPanelId == 'claudeVSCodePanel' || claude-vscode.sideBarActive && config.claudeCode.enableNewConversationShortcut && !editorFocus && !panelFocus"
-    },
-    {
-      "key": "cmd+n",
-      "command": "-claude-vscode.newConversation",
-      "when": "config.claudeCode.enableNewConversationShortcut && activeWebviewPanelId == 'claudeVSCodePanel' || claude-vscode.sideBarActive && config.claudeCode.enableNewConversationShortcut && !editorFocus && !panelFocus"
-    },
-    {
-      "key": "ctrl+shift+alt+t",
-      "command": "claude-vscode.editor.open",
-      "when": "!config.claudeCode.useTerminal"
-    },
-    {
-      "key": "shift+cmd+escape",
-      "command": "-claude-vscode.editor.open",
-      "when": "!config.claudeCode.useTerminal"
-    },
-    {
-      "key": "alt+k",
-      "command": "-claude-vscode.insertAtMention",
-      "when": "editorTextFocus"
-    },
-    {
-      "key": "alt+cmd+k",
-      "command": "-claude-code.insertAtMentioned",
-      "when": "editorTextFocus"
-    },
-    {
-      "key": "cmd+escape",
-      "command": "-claude-vscode.terminal.open.keyboard",
-      "when": "config.claudeCode.useTerminal"
-    },
-    {
-      "key": "ctrl+shift+alt+tab",
-      "command": "claude-code.acceptProposedDiff"
-    },
-    {
-      "key": "ctrl+shift+alt+tab",
-      "command": "claude-vscode.acceptProposedDiff"
-    },
-    {
-      "key": "ctrl+shift+alt+escape",
-      "command": "claude-code.rejectProposedDiff"
-    },
-    {
-      "key": "ctrl+shift+alt+escape",
-      "command": "claude-vscode.rejectProposedDiff"
-    },
-    {
-      "key": "ctrl+shift+alt+o",
-      "command": "claude-vscode.editor.openLast"
-    },
-    {
-      "key": "ctrl+shift+alt+x",
-      "command": "workbench.view.extension.codexViewContainer"
-    }
-  ]
+    "when": "terminalFocus"
+  },
+
+  // Editor Actions
+  {
+    "key": "ctrl+shift+5",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "workbench.action.toggleZenMode"
+  },
+
+  // Claude Code - Focus & Navigation
+  {
+    "key": "ctrl+shift+alt+f",
+    "command": "claude-vscode.blur",
+    "when": "!config.claudeCode.useTerminal && !editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+f",
+    "command": "claude-vscode.focus",
+    "when": "editorTextFocus && !config.claudeCode.useTerminal"
+  },
+  {
+    "key": "ctrl+shift+alt+n",
+    "command": "claude-vscode.newConversation",
+    "when": "config.claudeCode.enableNewConversationShortcut && activeWebviewPanelId == 'claudeVSCodePanel' || claude-vscode.sideBarActive && config.claudeCode.enableNewConversationShortcut && !editorFocus && !panelFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+t",
+    "command": "claude-vscode.editor.open",
+    "when": "!config.claudeCode.useTerminal"
+  },
+  {
+    "key": "ctrl+shift+alt+o",
+    "command": "claude-vscode.editor.openLast"
+  },
+
+  // Claude Code - Diff Actions
+  {
+    "key": "ctrl+shift+alt+tab",
+    "command": "claude-code.acceptProposedDiff"
+  },
+  {
+    "key": "ctrl+shift+alt+tab",
+    "command": "claude-vscode.acceptProposedDiff"
+  },
+  {
+    "key": "ctrl+shift+alt+escape",
+    "command": "claude-code.rejectProposedDiff"
+  },
+  {
+    "key": "ctrl+shift+alt+escape",
+    "command": "claude-vscode.rejectProposedDiff"
+  },
+
+  // Extensions
+  {
+    "key": "ctrl+shift+alt+x",
+    "command": "workbench.view.extension.codexViewContainer"
+  }
+]
