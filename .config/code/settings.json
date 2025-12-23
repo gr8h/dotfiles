@@ -1,0 +1,134 @@
+{
+  "git.autofetch": true,
+  "csharp.suppressBuildAssetsNotification": true,
+  "remote.SSH.configFile": "/Users/heshamshabanah/.ssh/config",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.autoDetectColorScheme": true,
+  "go.toolsManagement.autoUpdate": true,
+  "files.associations": {
+    "*.toml": "toml"
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.confirmSync": false,
+  "editor.defaultFormatter": "jinxdash.prettier-rust",
+  "editor.minimap.enabled": false,
+  // vim
+  "editor.suggest.insertMode": "replace",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "editor.linkedEditing": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 0.5,
+  "editor.minimap.enabled": false,
+  "update.showReleaseNotes": false,
+  "zenMode.hideLineNumbers": false,
+  "editor.lineNumbers": "relative",
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  "gitlens.statusBar.reduceFlicker": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.statusBar.pullRequests.enabled": false,
+  "gitlens.graph.statusBar.enabled": false,
+  "gitlens.mode.statusBar.enabled": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  // Antigravity-specific settings
+  "geminicodeassist.displayInlineContextHint": false,
+  "geminicodeassist.inlineCompletions.enabled": false,
+  "geminicodeassist.enableAutoSuggestions": false,
+  "antigravity.inlineSuggest.enabled": false,
+  "antigravity.codex.preferredLocation": "editor",
+  "codex.preferredLocation": "editor",
+  // Claude Code settings
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.selectedModel": "haiku",
+  "claudeCode.enableAutoSuggestions": false,
+  "claudeCode.inlineCompletions.enabled": false,
+  "claudeCode.enableCodeCompletions": false,
+  "claudeCode.useCtrlEnterToSend": true,
+  // UI customizations
+  "workbench.activityBar.location": "top",
+  // Inline suggestions disabled
+  "editor.inlineSuggest.enabled": false,
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggest.enabled": false,
+  // JSON schema and other settings
+  "json.schemaDownload.enable": true,
+  "python.languageServer": "Default",
+  "diffEditor.codeLens": true
+}

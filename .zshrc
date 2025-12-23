@@ -2,6 +2,9 @@
 # SETUP
 # =============================================================================
 # Symlink: ln -s ~/dotfiles/.zshrc ~/.zshrc
+# Symlink: ln -s ~/dotfiles/.config/wezterm ~/.config/wezterm
+# Symlink: ln -s ~/dotfiles/.wezterm.lua ~/.wezterm.lua
+# VSCode/Antigravity setup: See ~/dotfiles/.config/code/README.md
 # =============================================================================
 
 # =============================================================================
