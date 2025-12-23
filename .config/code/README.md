@@ -22,12 +22,3 @@ ln -s ~/dotfiles/.config/code ~/Library/Application\ Support/Code/User
 # Antigravity
 ln -s ~/dotfiles/.config/code ~/Library/Application\ Support/Antigravity/User
 ```
-
-## Usage
-
-Any changes made in either VSCode or Antigravity will instantly sync to both editors.
-
-To install extensions:
-```bash
-./install-extensions.sh
-```

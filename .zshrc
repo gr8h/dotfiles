@@ -84,7 +84,7 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 # -- Development Tools --
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 export PATH="$HOME/gr8h/Repos/nufflelabs/nuff/target/release:$PATH"
-export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
+export PATH="/Applications/Antigravity.app/Contents/Resources/app/bin:$PATH"
 
 # -- Applications --
 export PATH="/Applications/Windsurf.app/Contents/MacOS:$PATH"
