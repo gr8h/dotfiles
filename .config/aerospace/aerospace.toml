@@ -83,6 +83,16 @@ ctrl-alt-n = 'focus right'
 alt-p = "workspace --wrap-around prev"
 alt-n = "workspace --wrap-around next"
 
+alt-shift-ctrl-esc = 'close-all-windows-but-current'
+alt-shift-ctrl-u = 'workspace 1' # chat
+alt-shift-ctrl-i = 'workspace 2' # browser
+alt-shift-ctrl-o = 'workspace 3' # dev
+alt-shift-ctrl-p = 'workspace 4' # misc
+
+alt-shift-ctrl-h = 'resize width -50'
+alt-shift-ctrl-l = 'resize width +50'
+
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
 alt-shift-h = 'move left'
 alt-shift-j = 'move down'
@@ -94,10 +104,10 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = 'workspace 1'
-alt-2 = 'workspace 2'
-alt-3 = 'workspace 3'
-alt-4 = 'workspace 4'
+alt-1 = 'workspace 1' # chat
+alt-2 = 'workspace 2' # browser
+alt-3 = 'workspace 3' # dev
+alt-4 = 'workspace 4' # misc
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -135,10 +145,10 @@ f = [
 ] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 
-alt-shift-h = ['join-with left', 'mode main']
-alt-shift-j = ['join-with down', 'mode main']
-alt-shift-k = ['join-with up', 'mode main']
-alt-shift-l = ['join-with right', 'mode main']
+# alt-shift-h = ['join-with left', 'mode main']
+# alt-shift-j = ['join-with down', 'mode main']
+# alt-shift-k = ['join-with up', 'mode main']
+# alt-shift-l = ['join-with right', 'mode main']
 
 # aerospace list-apps
 [[on-window-detected]]
