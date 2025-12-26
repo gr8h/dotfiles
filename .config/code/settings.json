@@ -39,7 +39,7 @@
 
   // Claude Code Settings
   "claudeCode.preferredLocation": "panel",
-  "claudeCode.selectedModel": "haiku",
+  "claudeCode.selectedModel": "default",
   "claudeCode.enableAutoSuggestions": false,
   "claudeCode.inlineCompletions.enabled": false,
   "claudeCode.enableCodeCompletions": false,
@@ -48,6 +48,7 @@
   // Disabled Inline Suggestions
   "antigravity.inlineSuggest.enabled": false,
   "antigravity.codex.preferredLocation": "editor",
+  "antigravity.startupBehavior": "closed",
   "codex.preferredLocation": "editor",
   "geminicodeassist.displayInlineContextHint": false,
   "geminicodeassist.inlineCompletions.enabled": false,
