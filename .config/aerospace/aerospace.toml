@@ -84,10 +84,6 @@ alt-p = "workspace --wrap-around prev"
 alt-n = "workspace --wrap-around next"
 
 alt-shift-ctrl-esc = 'close-all-windows-but-current'
-alt-shift-ctrl-u = 'workspace 1' # chat
-alt-shift-ctrl-i = 'workspace 2' # browser
-alt-shift-ctrl-o = 'workspace 3' # dev
-alt-shift-ctrl-p = 'workspace 4' # misc
 
 alt-shift-ctrl-h = 'resize width -50'
 alt-shift-ctrl-l = 'resize width +50'
@@ -164,7 +160,7 @@ if.app-name-regex-substring = 'vscode|windsurf|antigravity|wezterm|medis2|compas
 run = ["move-node-to-workspace 3"]
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'preview|yubico|finder|logi|calculator|journal|notes|bitwarden|ausweisapp'
+if.app-name-regex-substring = 'yubico|finder|logi|calculator|journal|notes|bitwarden|ausweisapp'
 run = ['layout floating']
 # check-further-callbacks = true
 
