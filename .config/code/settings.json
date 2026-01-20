@@ -43,7 +43,6 @@
   "claudeCode.enableAutoSuggestions": false,
   "claudeCode.inlineCompletions.enabled": false,
   "claudeCode.enableCodeCompletions": false,
-  "claudeCode.useCtrlEnterToSend": true,
 
   // Disabled Inline Suggestions
   "antigravity.inlineSuggest.enabled": false,
@@ -76,5 +75,10 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.codeLens": true,
   "json.schemaDownload.enable": true,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "chatgpt.openOnStartup": true,
+  "claudeCode.respectGitIgnore": false,
+
+  // Accessibility
+  "editor.accessibilitySupport": "off"
 }

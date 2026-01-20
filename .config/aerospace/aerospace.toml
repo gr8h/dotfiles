@@ -156,13 +156,12 @@ if.app-name-regex-substring = 'chrome|safari|firefox|brave|arc|zen|atlas|comet'
 run = ["move-node-to-workspace 2"]
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'vscode|windsurf|antigravity|wezterm|medis2|compass|dbeaver|docker|steam|keymapp|prusaslicer'
+if.app-name-regex-substring = 'vscode|windsurf|antigravity|wezterm|medis2|compass|dbeaver'
 run = ["move-node-to-workspace 3"]
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'yubico|finder|logi|calculator|journal|notes|bitwarden|ausweisapp'
+if.app-name-regex-substring = 'yubico|logi|calculator|journal|notes|bitwarden|ausweisapp|system settings|finder'
 run = ['layout floating']
-# check-further-callbacks = true
 
 [[on-window-detected]]
 if.app-name-regex-substring = '.*'
